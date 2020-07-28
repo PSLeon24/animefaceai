@@ -81,16 +81,6 @@ body {
 	width: 320px;
 	margin:0 auto;
 }
-.right-banner {
-	position: absolute;
-	position: fixed;
-	top: 100px;
-	right: 0;
-	z-index: 3;
-	width: 160px;
-	height: 600px;
-	border:2px solid;
-}
 .drag-text {
   text-align: center;
 }
