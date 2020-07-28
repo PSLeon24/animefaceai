@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://animefaceai.netlify.app/sitemap.xml
