@@ -12,7 +12,12 @@
             crossorigin="anonymous"
         />
         <title>닮은 애니 캐릭터 찾기</title>
-        <meta name="title" content="닮은 애니 캐릭터 찾기" />
+	    <!-- 구글 제이쿼리 로드 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+		<script src="https://kit.fontawesome.com/e1117377aa.js" crossorigin="anonymous"></script>
+		
+		<meta name="title" content="닮은 애니 캐릭터 찾기" />
         <meta
             name="subject"
             content="얼굴로 보는 인공지능 닮은 애니 캐릭터 찾기, 나와 닮은 애니캐릭터를 찾아보세요!"
@@ -42,35 +47,40 @@
             src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f1ed8b0db9a7167"
         ></script>
 		<script data-ad-client="ca-pub-1784713818704836" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174179149-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-174179149-1');
+		</script>
     </head>
 
     <body>
-        <nav class="p-3 container navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">닮은 애니 캐릭터 찾기</a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"
-                            >닮은 애니 캐릭터 찾기
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+		<nav class="navbar">
+			<div class="navbar_logo">
+				<a href="https://animefaceai.netlify.app/">닮은 애니캐릭터 찾기</a>
+		  	</div>
+		  	<ul id="mainmenu" class="navbar_menu">
+				<!-- 메뉴 불러오기 -->
+				<script>
+			  		$("#mainmenu").load("./nav.html");
+				</script>
+		  	</ul>
+		  	<ul class="navbar_icons">
+				<li><i class="fab fa-twitter"></i></li>
+				<li><i class="fab fa-facebook"></i></li>
+		  	</ul>
+		</nav>
+		<ins class="kakao_ad_area" style="display:none;" 
+ 			data-ad-unit    = "DAN-1iuvzgn0725vc" 
+ 			data-ad-width   = "320" 
+ 			data-ad-height  = "50"></ins> 
+		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
         <section class="section">
-            <h1 class="title">나와 닮은 애니 캐릭터 찾기</h1>
+            <h1 class="title">닮은 애니 캐릭터 찾기</h1>
             <h2 class="subtitle">인공지능으로 보는 나와 닮은 애니 캐릭터 찾기</h2>
             <h2 class="sr-only">
                 나는 어떤 애니 주인공과 닮았을까? 나와 닮은 애니 캐릭터를 찾아보세요!
@@ -173,7 +183,7 @@
         <footer class="footer pt-5 container d-flex justify-content-center">
             <div>
                 <p>
-                    &copy; <a href="http://blog.naver.com/yp6461058">코딩하는 해커</a> 2020. All
+                    &copy; <a href="http://blog.naver.com/yp6461058" style="color:black">코딩하는 해커</a> 2020. All
                     Rights Reserved.
                 </p>
             </div>

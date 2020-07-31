@@ -4,6 +4,61 @@ body {
   box-sizing: border-box;
   color: #35465d;
 }
+/* 메뉴 구성 */
+a {
+  text-decoration: none;
+  color: rgb(223, 223, 223);
+}
+a:hover {
+  color: #ffffff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #263343;
+  padding: 8px 12px;
+}
+
+.navbar_logo img {
+  width: 150px;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar_menu li {
+  padding: 8px 12px;
+}
+
+.navbar_menu li:hover {
+  background-color: #d49466;
+  border-radius: 4px;
+}
+
+.navbar_icons {
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar_icons li {
+  padding: 8px 12px;
+}
+
+.navbar_toggleBtn {
+  margin-top: 10px;
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: #d49466;
+}
+/* Menu layouts */
 .file-upload {
     padding: 15% 3%;
     margin: 0 auto;
@@ -127,17 +182,6 @@ body {
   border: 0;
   transition: all .2s ease;
 }
-
-.navbar-light .navbar-brand {
-  line-height: 1.68;
-  text-align: left;
-  color: #35465d; 
-}
-
-.navbar-light .navbar-toggler {
-    border-color: #ffffff;
-}
-
 .section {
     margin-top: 50px;
 }
