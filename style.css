@@ -629,3 +629,43 @@ input:checked + label > .knob > i:before {
     width: 320px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1010px) {
+	h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+ .navbar_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_icons {
+    display: none;
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar_toggleBtn {
+    display: block;
+  }
+  .footer {
+    font-size: 0.9rem;
+  }
+  h3 {
+    font-size: 1.0rem;
+  }
+}
